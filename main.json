@@ -1,0 +1,95 @@
+{
+    "juris1": {
+        "room" : "1",
+        "num" : "1",
+        "date" : "1",
+        "acuser" : "1",
+        "acused" : "1",
+        "source" : "1",
+        "source_num" : "1",
+        "source_date" : "1",
+        "page" : "1",
+
+        "words" : [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8"
+          ],
+        "returne" : ""
+    },
+    "juris2": {
+        "room" : "2",
+        "num" : "2",
+        "date" : "2",
+        "acuser" : "2",
+        "acused" : "2",
+        "source" : "2",
+        "source_num" : "2",
+        "source_date" : "2",
+        "page" : "2",
+
+        "words" : "2",
+        "returne" : "2"
+    },
+    "juris3": {
+        "room" : "3",
+        "num" : "3",
+        "date" : "3",
+        "acuser" : "3",
+        "acused" : "3",
+        "source" : "3",
+        "source_num" : "3",
+        "source_date" : "3",
+        "page" : "3",
+
+        "words" : "3",
+        "returne" : "3"
+    },
+    "juris4": {
+        "room" : "4",
+        "num" : "4",
+        "date" : "4",
+        "acuser" : "4",
+        "acused" : "4",
+        "source" : "4",
+        "source_num" : "4",
+        "source_date" : "4",
+        "page" : "4",
+
+        "words" : "4",
+        "returne" : "4"
+    },
+    "juris5": {
+        "room" : "5",
+        "num" : "5",
+        "date" : "5",
+        "acuser" : "5",
+        "acused" : "5",
+        "source" : "5",
+        "source_num" : "5",
+        "source_date" : "5",
+        "page" : "5",
+
+        "words" : "5",
+        "returne" : "5"
+    },
+    "juris6": {
+        "room" : "6",
+        "num" : "6",
+        "date" : "6",
+        "acuser" : "6",
+        "acused" : "6",
+        "source" : "6",
+        "source_num" : "6",
+        "source_date" : "6",
+        "page" : "6",
+
+        "words" : "6",
+        "returne" : "6"
+    }
+}

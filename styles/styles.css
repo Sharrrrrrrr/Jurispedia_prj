@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
     background-color: #F8F8F8;
+    font-size: 16px;
+    font-family: Algerian;
+    overflow: auto;
 }
 
 .header {
@@ -28,7 +31,7 @@
 }
 
 .img_cont {
-    width: 10%;
+    width: 25%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -39,7 +42,7 @@
 }
 
 .search_cont {
-    width: 80%;
+    width: 50%;
 }
 
 .search_block {
@@ -64,13 +67,20 @@
     justify-content: center;
 }
 
+.botbot {
+    width: 50px;
+    font-size: 16px;
+    margin: 1px;
+}
+
 .checkbox_cont {
-    width: 10%;
+    width: 25%;
     display: flex;
     flex-direction: row;
 }
 
 .checkbox_block {
+    padding: 3px;
     width: 40%;
     display: flex;
     flex-direction: column;
@@ -108,8 +118,53 @@
     border: 2px solid black;
     background-color: darkseagreen;
     height: 20%;
-    overflow: auto;
-    direction: rtl;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.hod {
+    padding-right: 20px;
+    height: 25%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.bod {
+    padding: 2px;
+    height: 40%;
+    width: 50%;
+}
+
+.bod1 {
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.bod2 {
+    padding-right:8px; 
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 5px;
+}
+
+.fot {
+    padding: 2px;
+    padding-bottom: 4px;
+    height: 20%;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-around;
+    border-top: 2px solid black;
 }
 
 .main_table {
@@ -138,6 +193,9 @@
     direction: rtl;
 }
 
+.division {
+    height: 100%;
+}
 .icons_rec {
     height: 10%;
     display: flex;
@@ -232,6 +290,23 @@
     padding: 2px;
 }
 
+.buttonp {
+    margin: 1px;
+    background-color: transparent;
+    border: 0px;
+    padding: 0px;
+    padding-right: 2px;
+    width: 146px;
+    display: flex;
+    align-content: flex-end;
+    font-size: 16px;
+}
+
+.buttonp:hover {
+    color: white;
+    background-color: darkslateblue;
+}
+
 .right_middle {
     margin: 5px;
     border: 2px solid black;
@@ -256,6 +331,23 @@
     background-color: darkseagreen;
     height: 85%;
     padding: 2px;
+}
+
+.btn {
+    margin: 1px;
+    background-color: transparent;
+    border: 0px;
+    padding: 0px;
+    padding-right: 2px;
+    width: 146px;
+    display: flex;
+    align-content: flex-end;
+    font-size: 14px;
+}
+
+.btn:hover {
+    color: white;
+    background-color: darkslateblue;
 }
 
 .right_down {
@@ -284,6 +376,10 @@
     padding: 2px;
 }
 
+.table {
+    padding: 0px;
+}
+
 .footer {
     background-color: green;
     height: 5%;
@@ -291,5 +387,4 @@
     justify-content: center;
     align-items: center;
     font-size: 16px;
-
 }

@@ -1,138 +1,452 @@
 ﻿<html>
-    <head>
-        <meta charset="utf-8" />
-        <title>جوربيسبيديا - موسوعة الاجتهاد القضائي الجزائري (الاصدار الخامس )</title>
-        <link rel="icon" href="jurispedia.png" />
-        <link rel="stylesheet" type="text/css" href="styles/styles.css" />
-    </head>
+<head>
+    <meta charset="utf-8" />
+    <title>جوربيسبيديا - موسوعة الاجتهاد القضائي الجزائري (الاصدار الخامس )</title>
+    <link rel="icon" href="jurispedia.png" />
+    <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+    <script src="main.js"></script>
+</head>
 
-    <body class="body">
-        <header class="header">
-            <p style="text-align: center;">جوربيسبيديا - موسوعة الاجتهاد القضائي الجزائري (الاصدار الخامس ) </p>
-        </header>
+<body class="body">
+    <header class="header">
+        <p style="text-align: center;">جوربيسبيديا - موسوعة الاجتهاد القضائي الجزائري (الاصدار الخامس ) </p>
+    </header>
 
-        <main class="main">
-            <div class="search_space">
-                <div class="img_cont">
-                    <img src="img/ichtihad_pic.png" alt="Logo" class="logo1">
+    <main class="main">
+        <div class="search_space">
+            <div class="img_cont">
+                <img src="img/ichtihad_pic.png" alt="Logo" class="logo1">
+            </div>
+            <div class="search_cont">
+                <div class="search_block">
+                    <input dir='rtl' lang='ar' type="text" size="70" placeholder="البحث عن طريق الكلمات الرئيسية ، كلمات العنوان ، الكلمات الموجزة...">
                 </div>
 
-                <div class="search_cont">
-                    <div class="search_block">
-                        <input dir='rtl' lang='ar' type="text" size="70" placeholder="البحث عن طريق الكلمات الرئيسية ، كلمات العنوان ، الكلمات الموجزة...">
-                    </div>
-
-                    <div class="bouttons_block">
-                        <button type="submit">Submit</button>
-                        <button>Key</button>
-                        <button>Filter</button>
-                    </div>
-                </div>
-
-                <div class="checkbox_cont">
-                    <div class="checkbox_block">
-                        <input type="checkbox" alt="Coche 1" class="coche">
-                        <input type="checkbox" alt="Coche 2" class="coche">
-                    </div>
-
-                    <div class="checktext_block">
-                        <div class="coche-text">Checkbox 1</div>
-                        <div class="coche-text">Checkbox 2</div>
-                    </div>
+                <div class="bouttons_block">
+                    <button type="submit" style="cursor: pointer;" class="botbot">بحث</button>
+                    <button style="cursor: pointer;" class="botbot">محو</button>
+                    <button style="cursor: pointer;" class="botbot">تصفية</button>
                 </div>
             </div>
 
-            <div class="big_rec">
-                <div class="left">
-                    <div class="left_up">
-                        <div class="upper_rectangle">
+            <div class="checkbox_cont">
+                <div class="checkbox_block">
+                    <input type="checkbox" alt="Coche 1" class="coche">
+                    <input type="checkbox" alt="Coche 2" class="coche">
+                </div>
 
+                <div class="checktext_block">
+                    <div class="coche-text">القرار يحتوي على كل الكلمات</div>
+                    <div class="coche-text">بحث عن كلمة أو جزء من كلمة</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="big_rec">
+            <div class="left">
+                <div class="left_up">
+                    <div class="upper_rectangle">
+                        <div class="hod" id="room">
+                            
                         </div>
 
-                        <div class="main_table">
-                            <div class="bouttons_rec">
-                                <button class="boutton_left">تشكيلة المجلس</button>
-                                <button class="boutton_left">منطق القرار</button>
-                                <button class="boutton_left">القرار</button>
-                                <button class="boutton_left">مبدأ القرار</button>
+                        <div class="bod">
+                            <div class="bod1">
+                                <div>
+                                    <text dir='rtl' lang='ar' id="date"></text> 
+                                    <text dir='rtl' lang='ar'>الصادر بتاريخ:</text>
+                                </div>
+                                <div>
+                                    <text dir='rtl' lang='ar' id="num"></text> 
+                                    <text dir='rtl' lang='ar'>القرار رقم:</text>
+                                </div>
                             </div>
 
-                            <div class="nomoreidea">
-
-                            </div>
-                        </div>
-
-                        <div class="icons_rec">
-                            <div class="icon_left">
-                                <img src="img/ichtihad_pic.png" alt="Logo" class="logo2">
-                            </div>
-
-                            <div class="icons_right">
-                                <div class="icons_right_block">
-                                    <img src="img/open-door.png" alt="Logo" class="logo2">
-                                    <img src="img/customer-support.png" alt="Logo" class="logo2">
-                                    <img src="img/printer.png" alt="Logo" class="logo2">
-                                    <img src="img/folder.png" alt="Logo" class="logo2">
-                                    <img src="img/asterisk.png" alt="Logo" class="logo2">
+                            <div class="bod2">
+                                <div>
+                                    <text dir='rtl' lang='ar' id="acuser"></text> 
+                                    <text dir='rtl' lang='ar'>ضد:</text>
+                                </div>
+                                <div>
+                                    <text dir='rtl' lang='ar' id="acused"></text> 
+                                    <text dir='rtl' lang='ar'>قضية:</text>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="left_down">
-                        <div class="left_down_title">
-                            <div class="text_right">
-                                <p dir='rtl' lang='ar'>عدد القرارات التي تم العثور عليها:</p>
+                        <div class="fot">
+                            <div>
+                                <text dir='rtl' lang='ar' id="page"></text> 
+                                <text dir='rtl' lang='ar'>الصفحة:</text>
                             </div>
-
-                            <div class="text_left">
-                                <p dir='rtl' lang='ar'>نتائج البحث</p>
+                            <div>
+                                <text dir='rtl' lang='ar' id="source_date"></text> 
+                                <text dir='rtl' lang='ar'>الصادرة بتاريخ:</text>
+                            </div>
+                            <div>
+                                <text dir='rtl' lang='ar' id="source_num"></text> 
+                                <text dir='rtl' lang='ar'>العدد:</text>
+                            </div>
+                            <div>
+                                <text dir='rtl' lang='ar' id="source"></text> 
+                                <text dir='rtl' lang='ar'>المصدر:</text>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="left_down_content">
+                    <div class="main_table">
+                        <div class="bouttons_rec">
+                            <button class="boutton_left" id="boutton1" style="cursor: pointer;">تشكيلة المجلس</button>
+                            <button class="boutton_left" id="boutton2" style="cursor: pointer;">منطق القرار</button>
+                            <button class="boutton_left" id="boutton3" style="cursor: pointer;">القرار</button>
+                            <button class="boutton_left" id="boutton4" style="cursor: pointer;">مبدأ القرار</button>
+                        </div>
 
+                        <div class="nomoreidea">
+                            <div id="division1" class="division">Division 1 Content</div>
+                            <div id="division2" class="division" style="display: none;">Division 2 Content</div>
+                            <div id="division3" class="division" style="display: none;">Division 3 Content</div>
+                            <div id="division4" class="division" style="display: none;">Division 4 Content</div>
+                        </div>
+                    </div>
+
+                    <div class="icons_rec">
+                        <div class="icon_left">
+                            <img src="img/ichtihad_pic.png" alt="Logo" class="logo2">
+                        </div>
+
+                        <div class="icons_right">
+                            <div class="icons_right_block">
+                                <img src="img/open-door.png" alt="Logo" class="logo2" style="cursor: pointer;">
+                                <img src="img/customer-support.png" alt="Logo" class="logo2" style="cursor: pointer;" />
+                                <img src="img/printer.png" alt="Logo" class="logo2" id="print" style="cursor: pointer;"/>
+                                <img src="img/folder.png" alt="Logo" class="logo2" style="cursor: pointer;">
+                                <img src="img/asterisk.png" alt="Logo" class="logo2" style="cursor: pointer;">
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="right">
-                    <div class="right_up">
-                        <div class="right_up_title">
-                            <p dir='rtl' lang='ar'>اختيار الجهة القضائية</p>
+                <div class="left_down">
+                    <div class="left_down_title">
+                        <div class="text_right">
+                            <p dir='rtl' lang='ar'>عدد القرارات التي تم العثور عليها:</p>
                         </div>
 
-                        <div class="right_up_content">
-                            <table>
-                                <tbody>
-                                    <tr>
-                                        <td>....</td>
-                                    </tr>
-                                    <tr>
-                                        <td>....</td>
-                                    </tr>
-                                    <tr>
-                                        <td>....</td>
-                                    </tr>
-                                    <tr>
-                                        <td>....</td>
-                                    </tr>
-                                    <tr>
-                                        <td>....</td>
-                                    </tr>
-
-                                </tbody>
-                            </table>
+                        <div class="text_left">
+                            <p dir='rtl' lang='ar'>نتائج البحث</p>
                         </div>
                     </div>
 
-                    <div class="right_middle">
-                        <div class="right_middle_title">
-                            <p dir='rtl' lang='ar'>القرارات الصادرة عن الجهة القضائية</p>
-                        </div>
+                    <div class="left_down_content">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>....</td>
+                                </tr>
+                                <tr>
+                                    <td>....</td>
+                                </tr>
+                                <tr>
+                                    <td>....</td>
+                                </tr>
+                                <tr>
+                                    <td>....</td>
+                                </tr>
+                                <tr>
+                                    <td>....</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
 
-                        <div class="right_middle_content">
-                            <table>
+            <div class="right">
+                <div class="right_up">
+                    <div class="right_up_title">
+                        <p dir='rtl' lang='ar'>اختيار الجهة القضائية</p>
+                    </div>
+
+                    <div class="right_up_content">
+                        <table class="tablo">
+                            <tbody class="tbody">
+                                <tr>
+                                    <td>
+                                        <button id="but1" class="buttonp">الغرفة المدنية</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <button id="but2" class="buttonp">الغرفة الجزائية</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <button id="but3" class="buttonp">غرفة الاتهام</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <button id="but4" class="buttonp">الغرفة الاستعجالية</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <button id="but5" class="buttonp">غرفة شؤون الأسرة</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <button id="but6" class="buttonp">غرفة الأحداث</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <button id="but7" class="buttonp">الغرفة الاجتماعية</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <button id="but8" class="buttonp">الغرفة العقارية</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <button id="but9" class="buttonp">الغرفة البحرية</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <button id="but10" class="buttonp">الغرفة التجارية</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="right_middle">
+                    <div class="right_middle_title">
+                        <p dir='rtl' lang='ar'>القرارات الصادرة عن الجهة القضائية</p>
+                    </div>
+
+                    <div class="right_middle_content">
+                        <table id="tablito1" class="tablito">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <button id="btn1" class="btn">Juris1</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>....</td>
+                                </tr>
+                                <tr>
+                                    <td>....</td>
+                                </tr>
+                                <tr>
+                                    <td>....</td>
+                                </tr>
+                                <tr>
+                                    <td>....</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table id="tablito2" class="tablito" style="display: none;">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <button id="btn2" class="btn">Juris2</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>....</td>
+                                </tr>
+                                <tr>
+                                    <td>....</td>
+                                </tr>
+                                <tr>
+                                    <td>....</td>
+                                </tr>
+                                <tr>
+                                    <td>....</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table id="tablito3" class="tablito" style="display: none;">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <button id="btn3" class="btn">Juris3</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>....</td>
+                                </tr>
+                                <tr>
+                                    <td>....</td>
+                                </tr>
+                                <tr>
+                                    <td>....</td>
+                                </tr>
+                                <tr>
+                                    <td>....</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table id="tablito4" class="tablito" style="display: none;">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <button id="btn4" class="btn">Juris4</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>....</td>
+                                </tr>
+                                <tr>
+                                    <td>....</td>
+                                </tr>
+                                <tr>
+                                    <td>....</td>
+                                </tr>
+                                <tr>
+                                    <td>....</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table id="tablito5" class="tablito" style="display: none;">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <button id="btn5" class="btn">Juris5</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>....</td>
+                                </tr>
+                                <tr>
+                                    <td>....</td>
+                                </tr>
+                                <tr>
+                                    <td>....</td>
+                                </tr>
+                                <tr>
+                                    <td>....</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table id="tablito6" class="tablito" style="display: none;">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <button id="btn6" class="btn">Juris6</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>....</td>
+                                </tr>
+                                <tr>
+                                    <td>....</td>
+                                </tr>
+                                <tr>
+                                    <td>....</td>
+                                </tr>
+                                <tr>
+                                    <td>....</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table id="tablito7" class="tablito" style="display: none;">
+                            <tbody>
+                                <tr>
+                                    <td>7....</td>
+                                </tr>
+                                <tr>
+                                    <td>....</td>
+                                </tr>
+                                <tr>
+                                    <td>....</td>
+                                </tr>
+                                <tr>
+                                    <td>....</td>
+                                </tr>
+                                <tr>
+                                    <td>....</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table id="tablito8" class="tablito" style="display: none;">
+                            <tbody>
+                                <tr>
+                                    <td>8....</td>
+                                </tr>
+                                <tr>
+                                    <td>....</td>
+                                </tr>
+                                <tr>
+                                    <td>....</td>
+                                </tr>
+                                <tr>
+                                    <td>....</td>
+                                </tr>
+                                <tr>
+                                    <td>....</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table id="tablito9" class="tablito" style="display: none;">
+                            <tbody>
+                                <tr>
+                                    <td>9....</td>
+                                </tr>
+                                <tr>
+                                    <td>....</td>
+                                </tr>
+                                <tr>
+                                    <td>....</td>
+                                </tr>
+                                <tr>
+                                    <td>....</td>
+                                </tr>
+                                <tr>
+                                    <td>....</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table id="tablito10" class="tablito" style="display: none;">
+                            <tbody>
+                                <tr>
+                                    <td>10....</td>
+                                </tr>
+                                <tr>
+                                    <td>....</td>
+                                </tr>
+                                <tr>
+                                    <td>....</td>
+                                </tr>
+                                <tr>
+                                    <td>....</td>
+                                </tr>
+                                <tr>
+                                    <td>....</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+
+                <div class="right_down">
+                    <div class="right_down_bouttons_cont">
+                        <button class="boutton_right" id="buttont1" data-target="table1" style="cursor: pointer;">المرجعية القانونية</button>
+                        <button class="boutton_right" id="buttont2" data-target="table2" style="cursor: pointer;">الكلمات الدالة على القرار</button>
+                    </div>
+
+                    <div class="rec_right_down">
+                        <div>
+                            <table id="table1" class="table" style="display: none;">
                                 <tbody>
                                     <tr>
                                         <td>....</td>
@@ -152,31 +466,24 @@
                                 </tbody>
                             </table>
                         </div>
-                    </div>
 
-                    <div class="right_down">
-                        <div class="right_down_bouttons_cont">
-                            <button class="boutton_right">المرجعية القانونية</button>
-                            <button class="boutton_right">الكلمات الدالة على القرار</button>
-                        </div>
-
-                        <div class="rec_right_down">
-                            <table>
+                        <div >
+                            <table id="table2" class="table">
                                 <tbody>
                                     <tr>
-                                        <td>....</td>
+                                        <td>1</td>
                                     </tr>
                                     <tr>
-                                        <td>....</td>
+                                        <td>2</td>
                                     </tr>
                                     <tr>
-                                        <td>....</td>
+                                        <td>3</td>
                                     </tr>
                                     <tr>
-                                        <td>....</td>
+                                        <td>4</td>
                                     </tr>
                                     <tr>
-                                        <td>....</td>
+                                        <td>5</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -184,11 +491,95 @@
                     </div>
                 </div>
             </div>
-        </main>
+        </div>
+    </main>
 
-        <footer class="footer">
-            <p style="text-align: center;">All Rights Reserved © MIT</p>
-        </footer>
-    </body>
+    <footer class="footer">
+        <p style="text-align: center;">All Rights Reserved © MIT</p>
+    </footer>
+
+    <script src="main.js"></script>
+
+    <script>
+        const printBtn = document.getElementById('print');
+        printBtn.addEventListener('click', function(){
+            print();
+        })
+
+        const room = document.getElementById('room');
+        const num = document.getElementById('num');
+        const date = document.getElementById('date');
+        const acuser = document.getElementById('acuser');
+        const acused = document.getElementById('acused');
+        const source = document.getElementById('source');
+        const source_num = document.getElementById('source_num');
+        const source_date = document.getElementById('source_date');
+        const page = document.getElementById('page');
+        const wordsTable = document.getElementById('table2');
+        const returneTable = document.getElementById('table1');
+
+        // Helper function to clear all information
+        function clearInformation() {
+        room.textContent = '';
+        num.textContent = '';
+        date.textContent = '';
+        acuser.textContent = '';
+        acused.textContent = '';
+        source.textContent = '';
+        source_num.textContent = '';
+        source_date.textContent = '';
+        page.textContent = '';
+        wordsTable.innerHTML = '';
+        returneTable.innerHTML = '';
+        }
+
+        async function getData(juris) {
+        try {
+            const response = await fetch('main.json');
+            if (!response.ok) {
+            throw new Error('Network response was not ok');
+            }
+            const data = await response.json();
+            return data[juris];
+        } catch (error) {
+            console.error('Error fetching data:', error);
+            // Add some user feedback, like displaying an error message on the page.
+            alert('An error occurred while fetching data. Please try again later.');
+            return null;
+        }
+        }
+
+        // Function to update the information based on 'juris'
+        async function updateInformation(juris) {
+        clearInformation(); // Clear existing information
+        const data = await getData(juris);
+        if (data) {
+            room.textContent = data.room;
+            num.textContent = data.num;
+            date.textContent = data.date;
+            acuser.textContent = data.acuser;
+            acused.textContent = data.acused;
+            source.textContent = data.source;
+            source_num.textContent = data.source_num;
+            source_date.textContent = data.source_date;
+            page.textContent = data.page;
+
+            // Assuming 'data.words' and 'data.returne' are arrays
+            wordsTable.innerHTML = `<tbody style="list-style-type: none;">${data.words.map(word => `<tr><td>${word}</td></tr>`).join('')}</tbody>`;
+            returneTable.innerHTML = `<tbody style="list-style-type: none;">${data.returne.map(item => `<tr><td>${item}</td></tr>`).join('')}</tbody>`;
+        }
+        }
+
+        // Event listener for the "juris" buttons
+        for (let i = 1; i <= 6; i++) {
+        const btn = document.getElementById(`btn${i}`);
+        if (btn) {
+            btn.addEventListener('click', () => {
+            updateInformation(`juris${i}`);
+            });
+        }
+        }
+    </script>
+
+</body>
 </html>
-
